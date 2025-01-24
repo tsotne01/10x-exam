@@ -1,0 +1,17 @@
+.vl {
+    border-left: 1px solid rgba(66, 71, 112, 0.06);
+    height: 100%;
+  }
+  body{
+    position: relative;
+  }
+  .vertical__lines-wrapper{
+  display:flex;
+  justify-content:space-between;
+  width:1080px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  
+  }

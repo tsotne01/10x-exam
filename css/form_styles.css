@@ -55,7 +55,7 @@
     }
     & .apple__pay-btn{
       height: 24px;
-      background-image: url(./media/apple__pay-logo.svg);
+      background-image: url(../media/apple__pay-logo.svg);
       background-position: center;
       background-repeat: no-repeat;
       margin: 18px 0px 12px 0;
@@ -137,7 +137,7 @@
         /* first */
         grid-column: 1/3;
         grid-row: 2/3;
-        background-image: url(./media/visa__logo.svg);
+        background-image: url(../media/visa__logo.svg);
         background-position: 60% 60%;
         background-repeat: no-repeat;
         border-radius: 4px 4px 0 0;
@@ -147,7 +147,7 @@
         /* third */
         grid-column: 2/3;
         grid-row: 3/4;
-        background-image: url(./media/cvc__logo.svg);
+        background-image: url(../media/cvc__logo.svg);
         background-repeat: no-repeat;
         background-position: 80% 60%;
         border-left: none;

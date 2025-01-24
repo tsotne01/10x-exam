@@ -39,7 +39,7 @@
         position: relative;
     }
     & .chart__search::before{
-        content: url(./media/search__icon.svg);
+        content: url(../media/search__icon.svg);
         position: absolute;
         top: 3px;
         left: 0;
