@@ -140,7 +140,7 @@ body{
     height: 477px;
     margin-top: 215px;
 & > span::before {
-    content: url(./Media/payment-icon.png);
+    content: url(./media/payment-icon.png);
     padding: 0 0 0 10px;
     
 }
@@ -228,7 +228,7 @@ body{
     height: 477px;
     margin-top: 215px;
 & > span::before {
-    content: url(./Media/billing-icon.png);
+    content: url(./media/billing-icon.png);
     padding: 0 0 0 10px;
 
 }
@@ -241,7 +241,7 @@ body{
     height: 477px;
     margin-top: 215px;
 & > span::before {
-    content: url(./Media/connect-icon.png);
+    content: url(./media/connect-icon.png);
     padding: 0 0 0 10px;
 
 }
@@ -257,7 +257,7 @@ body{
     margin-top: 215px;
 }
 & > span::before {
-    content: url(./Media/issuing-icon.png);
+    content: url(./media/issuing-icon.png);
     padding: 0 0 0 10px;
 
 }
@@ -297,7 +297,7 @@ body{
     position: absolute;
     left: -22px;
     top: -4px;
-    background-image: url(./Media/Quantum-icon.png);
+    background-image: url(./media/Quantum-icon.png);
     background-size: 17px 17px;
     background-repeat: no-repeat;
     display: inline-block;
@@ -376,7 +376,7 @@ body{
     color: #3F4B66;
 }
 & .quantum-card ul li::before {
-    content: url(./Media/done-purple-icon.png);
+    content: url(./media/done-purple-icon.png);
 }
 }
 
