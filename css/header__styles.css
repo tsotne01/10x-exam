@@ -32,7 +32,7 @@
       aspect-ratio: 1920/840;
     } */
      width: 100vw;
-     background-image: url(../media/header__background_image.png);
+     /* background-image: url(../media/header__background_image.png); */
      /* background-position: center; */
      background-repeat: no-repeat;
      display: flex;
@@ -40,6 +40,7 @@
     flex-direction: column;
     scrollbar-width: none;
     overflow: hidden ;
+    position: relative;
      
   }
   
@@ -181,6 +182,25 @@
     grid-template-rows: repeat(2, 1fr);
     row-gap: 60px;
     margin-bottom: 100px;
+  }
+
+
+  #gradient__animation{
+    /* background-color: black; */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    /* transform: rotate(-12deg); */
+    transform: skew(-12deg) rotate(-12deg) scaleY(2.2) translateY(-100px);
+    z-index: -1;
+    pointer-events: none;
+    background-color: whitesmoke;
+    background-image: linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+    cursor: pointer;
+    filter: blur(10px) saturation(0.3);
   }
   
   @media (width < 600px) {
