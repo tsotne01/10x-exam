@@ -77,10 +77,32 @@
                 <div class="chart">
                   <div class="chart__search">search</div>
                   
-                    <div class="canvas__grid">
-                      <canvas id="chart__js-volume" width="750" height="93"></canvas>
-                      <canvas id="sdad" width="237.5" height="230"></canvas>
-                      <canvas id="dddd" width="" height="200"></canvas>
+                    <div class="chart__grid">
+                      <div class="first__chart">
+
+                        <div class="first__chart-title">Today</div>
+                        <div class="net__volume">
+                            <div class="net__volume-today">
+                                <span class="net__volume-title">Net Volume</span>
+                                <span class="volume__amount">$3,528,198.72</span>
+                                <span class="time">2:00 PM</span>
+                            </div>
+                            <div class="net__volume-yesterday">
+                                <span class="net__volume-title">Yesterday</span>
+                                <span class="volume__amount-yesterday">$3,528,198.72</span>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="second__chart">
+                        <div class="net__volume-sales">
+                            Net volume from sales<span class="revenue__precents">+32.8%</span>
+                        </div>
+                        <div class="revenue__usd">
+                            <span class="gross">$39,274.29</span>
+                            $29,573.54
+                        </div>
+                      </div>
+                      <div class="third__chart"></div>
                     </div>
                   
                 </div>
@@ -318,9 +340,11 @@
     </section>
     
     </main>
-    
-
     <footer></footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/chartjs.js"></script>
     <script src="./js/gradientAnimation.js"></script>
 </body>
 </html>
