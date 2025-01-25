@@ -62,7 +62,7 @@
       transition: fill .8s ease-in-out;
     }
     & svg:hover path{
-      fill: #0a254096;
+      fill: Color-mix(in srgb,white 80%,grey);
     }
     & nav a {
       font-size: 13.83px;
@@ -76,7 +76,7 @@
       cursor: pointer;
     }
     & nav li:hover a{
-      color: #0A2540;
+      color: Color-mix(in srgb,white 70%,grey);
     }
   }
   
