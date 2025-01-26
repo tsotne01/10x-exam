@@ -92,6 +92,7 @@
                                 <span class="volume__amount-yesterday">$3,528,198.72</span>
                             </div>
                         </div>
+                        <canvas id="first__chart-canvas" width="700" height="150"></canvas>
                       </div>
                       <div class="second__chart">
                         <div class="net__volume-sales">
@@ -101,8 +102,18 @@
                             <span class="gross">$39,274.29</span>
                             $29,573.54
                         </div>
+                        <canvas id="second__chart-canvas"></canvas>
                       </div>
-                      <div class="third__chart"></div>
+                      <div class="third__chart">
+                        <div class="net__volume-sales">
+                            New customers<span class="revenue__precents">+32.8%</span>
+                        </div>
+                        <div class="revenue__usd">
+                            <span class="gross">37</span>
+                            28  
+                        </div>
+                        <canvas id="third__chart-canvas" width="300" height="150"></canvas>
+                      </div>
                     </div>
                   
                 </div>
@@ -343,7 +354,7 @@
     <footer></footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <script src="./js/chartjs.js"></script>
     <script src="./js/gradientAnimation.js"></script>
 </body>
