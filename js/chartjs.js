@@ -3,8 +3,8 @@ let firstChart = new Chart(document.getElementById("first__chart-canvas").getCon
     type: 'line',
     data: {
         datasets: [{
-            label: ["","","","","","","","","","","","","","","",],
-            data: [0, 30, 15, 60,15, 60,15, 60,15, 60],
+            label: ["","","","","","","","","","","","","","","","","","",""],
+            data: [0,0,0, 30, 15, 60,15, 60,15, 60,15, 60],
             borderWidth:1,
             borderColor: "blue",
             pointStyle: 'circle',
@@ -13,14 +13,14 @@ let firstChart = new Chart(document.getElementById("first__chart-canvas").getCon
         },{
             label: ["","","","","","","","","","","","","","","",],
             legend: false,
-            data: [0, 10, 20, 40],
+            data: [0,0,0, 10, 20, 40,10, 20, 40,10, 20, 40,10, 20, 40,10, 20, 40],
             borderWidth:1,
             borderColor: "#C4CCD8",
             pointStyle: 'circle',
             radius: 0,
             backgroundColor:"white",
         }],
-        labels: ['',"","",""]
+        labels: ['',"","","",'',"","","",'',"","","",'',"","","",'',"","",""]
     },
     options: {
         plugins: {
@@ -152,6 +152,7 @@ let thirdChart = new Chart(document.getElementById("third__chart-canvas").getCon
                     display: false,
                 },
             },
+            
         },
         
         
