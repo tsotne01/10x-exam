@@ -1,0 +1,117 @@
+
+.enterprise__reinvention{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.enterprise__reinvention-container{
+    max-width: min(1080px,95vw);
+    margin-top: 128px;
+    position: relative;
+}
+
+.enterprise__reinvention-agility-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+}
+
+
+.agility-subtitle{
+    color: #635BFF;
+    font-size: 16.45px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    display: inline-block;
+}
+
+.agility-title{
+    font-size: 34.73px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    color: #0A2540;
+    font-weight: normal;
+    margin: 0;
+}
+
+.agility-text{
+    color: #425466;
+    font-size: 16.45px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    max-width: 720px;
+    margin: 0;
+}
+
+.agility-link{
+    color: #635BFF;
+    text-decoration: none;
+}
+
+.agility-button{
+    background-color: #635BFF;
+    border: none;
+    color: #FFFFFF;
+    width: 139.2px;
+    height: 33px;
+    border-radius: 16.5px;
+    font-size: 13.95px;
+    cursor: pointer;
+}
+
+.enterprise__reinvention-customers{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.customers__working-years{
+    display: block;
+    color: #0A2540;
+    font-size: 24px;
+    line-height: 31.9px;
+    letter-spacing: 0.2px;
+    padding-left: 15px;
+    border-left: 1px solid #635BFF;
+}
+
+.customers-text{
+    max-width: 202px;
+    font-size: 13.83px;
+    color: #425466;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding-left: 16px;
+}
+
+.customers__products{
+    display: block;
+    color: #0A2540;
+    font-size: 13.95px;
+    padding-left: 15px;
+    border-left: 1px solid #635BFF;
+    margin-bottom: 24px;
+}
+
+.product__1,.product__2{
+    display: block;
+    margin-left: 36px;
+    color: #425466;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+}
+
+.product__1::before{
+    content: url(../media/payments--icon.svg);
+    vertical-align: middle;
+    margin-right: 14px;
+}
+
+
+.product__2::before{
+    content: url(../media/connect--icon.svg);
+    vertical-align: middle;
+    margin-right: 14px;
+}
