@@ -93,8 +93,15 @@
     grid-column: 2/3;
     grid-row: 2/3;
     width: 545.5px;
+    max-width: 237.5px;
     height: 230px;
     background-color: white;
+    & > .net__volume-sales{
+        padding: 18px 16px 4px 16px;
+    }
+    & > *:not(.net__volume-sales){
+        padding: 0 16px;
+    }
 }
 
 .first__chart{
