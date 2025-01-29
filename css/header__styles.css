@@ -22,6 +22,11 @@
     overflow-x: hidden ;
     font-family: "Inter", serif;
   }
+  main{
+    width: 100vw;
+  }
+
+
   .header__background-img {
     /* position: absolute;
     max-width: 100%;
@@ -176,7 +181,7 @@
   }
   
   .logos_wrapper {
-    max-width: 1080px;
+    max-width: min(1080px,95vw);
     margin-bottom: 100px;
     width: var(--header-width);
     display: grid;
@@ -217,6 +222,7 @@
     }
     .first__section-img-content {
       display: none;
+      /* visibility: hidden; */
     }
     .first__section-txt-content {
       width: 100%;
@@ -229,6 +235,7 @@
     }
     .header__logo-nav nav {
       display: none;
+      /* visibility: hidden; */
     }
     .header__buttons {
       display: none;
