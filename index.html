@@ -158,7 +158,8 @@
 
                 <!-- Wrapper for the  card media (card images) -->
                 <div class="cards-wrapper">
-                    <!-- Div added to fix the issue with the box shadow  -->
+                    <img src="./media/cards-animation.png" alt="" class="cards-animation1">
+                    <img src="./media/cards-animation(small).png" alt="" class="cards-animation2">
                     <div class="cards-holder">
                         <div class="black-card">
                             <img src="./media/black-card.png" alt="black-plastic-card">
@@ -169,12 +170,11 @@
                         <div class="white-card">
                             <img src="./media/white-card.png" alt="white-plastic-card">
                         </div>
-                        <!-- background animation -->
-                        <img src="./media/card-bckg.svg" alt="background animatino" class="cards_backgr-image">
+                        <div class="box-shadow"></div>
                     </div>
                      
                     <!-- Box-shadow applied here for card effect -->
-                    <div class="box-shadow"></div>
+
                 </div>
             </div>
         </div>
@@ -261,48 +261,51 @@
                 <hr>
 
                 <!-- Individual subscription options for "Quantum" -->
-                <div class="quantum-card-wrapper">
-                    <div class="quantum-card">
-                        <h3>Standard</h3>
-                        <p>Up to 5 users</p>
-                        <p><span>$49 </span>/month</p>
-                        <button>Subscribe</button>
-                        <p>This includes:</p>
-                        <ul>
-                            <li>&nbsp;&nbsp;12 months historical data</li>
-                            <li>&nbsp;&nbsp;4 hr data refresh</li>
-                            <li>&nbsp;&nbsp;500+ third party integrations</li>
-                        </ul>
+                 <div class="quantum-card-holder">
+                    <div class="quantum-card-wrapper">
+                        <div class="quantum-card">
+                            <h3>Standard</h3>
+                            <p>Up to 5 users</p>
+                            <p><span>$49 </span>/month</p>
+                            <button>Subscribe</button>
+                            <p>This includes:</p>
+                            <ul>
+                                <li>&nbsp;&nbsp;12 months historical data</li>
+                                <li>&nbsp;&nbsp;4 hr data refresh</li>
+                                <li>&nbsp;&nbsp;500+ third party integrations</li>
+                            </ul>
+                        </div>
+                        <div class="quantum-card">
+                            <h3>Professional</h3>
+                            <span>Popular!</span>
+                            <p>Up to 25 users</p>
+                            <p><span>$149 </span>/month</p>
+                            <button>Subscribe</button>
+                            <p>This includes:</p>
+                            <ul>
+                                <li>&nbsp;&nbsp;24 months historical data</li>
+                                <li>&nbsp;&nbsp;1 hr data refresh</li>
+                                <li>&nbsp;&nbsp;1,000+ third party integrations</li>
+                                <li>&nbsp;&nbsp;Simple reporting</li>
+                            </ul>
+                        </div>
+                        <div class="quantum-card">
+                            <h3>Enterprise</h3>
+                            <p>Unlimited users</p>
+                            <p><span>$299 </span>/month</p>
+                            <button>Subscribe</button>
+                            <p>This includes:</p>
+                            <ul>
+                                <li>&nbsp;&nbsp;Unlimited historical data</li>
+                                <li>&nbsp;&nbsp;15 min data refresh</li>
+                                <li>&nbsp;&nbsp;2,000+ third party integrations</li>
+                                <li>&nbsp;&nbsp;Advanced reporting</li>
+                                <li>&nbsp;&nbsp;Priority support</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="quantum-card">
-                        <h3>Professional</h3>
-                        <span>Popular!</span>
-                        <p>Up to 25 users</p>
-                        <p><span>$149 </span>/month</p>
-                        <button>Subscribe</button>
-                        <p>This includes:</p>
-                        <ul>
-                            <li>&nbsp;&nbsp;24 months historical data</li>
-                            <li>&nbsp;&nbsp;1 hr data refresh</li>
-                            <li>&nbsp;&nbsp;1,000+ third party integrations</li>
-                            <li>&nbsp;&nbsp;Simple reporting</li>
-                        </ul>
-                    </div>
-                    <div class="quantum-card">
-                        <h3>Enterprise</h3>
-                        <p>Unlimited users</p>
-                        <p><span>$299 </span>/month</p>
-                        <button>Subscribe</button>
-                        <p>This includes:</p>
-                        <ul>
-                            <li>&nbsp;&nbsp;Unlimited historical data</li>
-                            <li>&nbsp;&nbsp;15 min data refresh</li>
-                            <li>&nbsp;&nbsp;2,000+ third party integrations</li>
-                            <li>&nbsp;&nbsp;Advanced reporting</li>
-                            <li>&nbsp;&nbsp;Priority support</li>
-                        </ul>
-                    </div>
-                </div>
+                 </div>
+                
             </div>
         </div>
 
@@ -322,30 +325,32 @@
             </div>
 
             <!-- Placeholder for "Connect" media card content -->
-            <div class="connect-card-wrapper">
+            <div class="connect-card-holder">
+                <div class="connect-card-wrapper" >
+                 <!-- Top section showing alert and transaction details -->
+                    <div class="alert-holder">
+                        <p>#9124 <span>&nbsp; Jacques Muller </span></p>
+                        <span class="processing">Processing</span>
+                        <span>$200.00</span>
+                    </div>
+                    <div class="alert-backgr"></div>
+
+                    <!-- Oval shape for visual design element -->
+                    <div class="oval"></div>
+
+                    <!-- Main content for "Connect" card, including buyer, platform, and provider information -->
+                    <div class="connect-card-content">
+                        <p id="buyers">Buyers</p>
+                        <img src="./media/Gradient-triangle-top.png" alt="">
+                        <p id="platform">Platform</p>
+                        <img src="./media/Gradient-triangle-bottom.png" alt="">
+                        <p id="providers">Sellers or service providers</p>
+
+                        <span id="price1">$4.50</span>
+                        <span id="price2">$145.50</span>
+                    </div>   
+                </div>
                 
-                <!-- Top section showing alert and transaction details -->
-                <div class="alert-holder">
-                    <p>#9124 <span>&nbsp; Jacques Muller </span></p>
-                    <span class="processing">Processing</span>
-                    <span>$200.00</span>
-                </div>
-                <div class="alert-backgr"></div>
-
-                <!-- Oval shape for visual design element -->
-                <div class="oval"></div>
-
-                <!-- Main content for "Connect" card, including buyer, platform, and provider information -->
-                <div class="connect-card-content">
-                    <p id="buyers">Buyers</p>
-                    <img src="./media/Gradient-triangle-top.png" alt="">
-                    <p id="platform">Platform</p>
-                    <img src="./media/Gradient-triangle-bottom.png" alt="">
-                    <p id="providers">Sellers or service providers</p>
-
-                    <span id="price1">$4.50</span>
-                    <span id="price2">$145.50</span>
-                </div>
             </div>
         </div>
 
@@ -366,7 +371,6 @@
 
             <!-- Placeholder for "Issuing" media cards (with box-shadow effect) -->
             <div class="cards-wrapper">
-                <!-- Container for the visual cards with shadow effect -->
                 <div class="cards-holder">
                     <div class="black-card">
                         <img src="./media/black-card.png" alt="black-plastic-card">
@@ -377,8 +381,8 @@
                     <div class="white-card">
                         <img src="./media/white-card.png" alt="white-plastic-card">
                     </div>
-                </div>
-                <div class="box-shadow"></div>
+                    <div class="box-shadow"></div>
+                </div>               
             </div>
         </div>
 
