@@ -13,10 +13,28 @@
     padding: 24px;
     & .chart__menu{
         color: white;
-        width: 133px;
-        height: 100%;
+        /* width: 133px; */
+        /* height: 100px; */
+        height: fit-content;
         text-align: center;
-        /* background-color: blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    & .chart__menu::before{
+        content: url(../media/rocket_rides-logo.svg);
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    & .chart__menu::after{
+        content: url(../media/arrow_down-white.svg);
+        width: 10px;
+        height: auto;
+        display: inline-block;
+        margin-left: 5px;
     }
     & .chart{
         width: 795px;
@@ -28,7 +46,7 @@
 
     & .chart__search{
         width: 278px;
-        height: 20px;
+        min-height: 20px;
         background-color: white;
         border-radius: 4px;
         color: #62788D;
