@@ -21,9 +21,9 @@
     --ms-p-lh: 28px;
 }
 
-/* main{
+main{
     width: 100vw;
-} */
+}
 
 /* body{
     display: flex;
@@ -43,12 +43,14 @@
 }
 
 .modular-solutions, .payments, .billing, .connect, .issuing  {
-    width: var(--ms-width);
+    width: min(var(--ms-width),95vw);
     margin-top: 130px;
 }
 
+
 .content-holder {
     display: flex;
+    gap: 70px;
 }
 .text-holder {
     width: 50%;
@@ -66,8 +68,8 @@
     font-family: inter;
     font-weight: bold;
     /* font-size: var(--ms-h2); */
-    font-size: clamp(44px, 3vw, 51px);
-    line-height: var(--ms-h2-lh);
+    font-size: clamp(44px, 6vw, 51px);
+    line-height: clamp(56px, 5vw, 68px);
     letter-spacing: -1.12px;
     color: #0A2540;
     padding: 0 70px 0 10px;
@@ -86,9 +88,17 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 50%;
+    /* width: 50%; */
     top: 110px;
-    left: 50px;
+    /* left: 50px; */
+    & img {
+        width:clamp(310px, 26vw, 350px);
+    }
+}
+
+.cards-animation1, .cards-animation2 {
+    display: none;
+    
 }
 
 .cards-holder {
@@ -96,6 +106,18 @@
     height: 432px;
 }
 
+.cards-wrapper::before{
+    content: url(../media/card-bckg-left.svg);
+    position: absolute;
+    top: 91px;
+    left:-89px;
+}
+/* .cards-wrapper::after{
+    content: url(../media/card-bckg-right.svg);
+    position: absolute;
+    top: 75px;
+    right:-88px;
+} */
 .cards_backgr-image{
     position: absolute;
     top: 0;
@@ -105,8 +127,8 @@
 
 .box-shadow {
     position: absolute;
-    width: 349px;
-    height: 413px;
+    width: clamp(322px, 26vw, 350px);
+    height: clamp (390px, 26vw, 413px);
     border-radius: 20px;
     box-shadow: 0 5px 50px 0 rgb(0 0 0 / 35%);
 }
@@ -117,6 +139,12 @@
     z-index: 1;
     transition: 0.2s ease-in-out;
     
+}
+.content-holder  .black-card::after{
+    content: url(../media/card-bckg-right.svg);
+    position: absolute;
+    top: 75px;
+    right:-68px;
 }
 .green-card {
     position: absolute;
@@ -140,12 +168,13 @@
 /* payments */
 .payments {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 180px;
 }
 & .payment-media-holder {
     position: relative;
     top: 170px;
-    right: 40px;
+    /* right: 90px; */
 }
 & .text_holder{
     width: 540px;
@@ -266,6 +295,7 @@
 .issuing{
     display: flex;
     margin-bottom: 80px;
+    gap: 160px;
 &.text_holder{
     width: 540px;
     height: 477px;
@@ -278,6 +308,7 @@
 }
 & .cards-wrapper {
     top: 230px;
+    /* left: 150px; */
 }   
 } 
 
@@ -285,12 +316,13 @@
 
 .billing {
     display: flex;
-    justify-content: space-between;
+    gap: 70px;
+    /* justify-content: space-between; */
 }
 .quantum-wrapper{
     z-index: 1;
-    width: 50%;
-    height: 420px;
+    width: clamp(330px, 100%, 480px);
+    height: clamp(3px, 100%, 420px);
     background-color: #FFFFFF;
     border-radius: 15px;
     margin-top: 235px;
@@ -298,7 +330,8 @@
 & .quantum-header {
     display: flex;
     /* align-items: center; */
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: clamp(69px, 27vw, 210px);
     padding: 12px 39px 0px;
 }
 & .quantum-header > span {
@@ -336,12 +369,14 @@
 } 
 & .quantum-card-wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: clamp(5px, 1vw, 20px);
 }
 & .quantum-card {
     position: relative;
-    width: 135px;
-    padding: 6px 16px 9px; 
+    width: clamp(120px, 11vw, 135px);
+    /* height: clamp(300px, 100%, 350px); */
+    padding: 9px 6px 16px 9px; 
     transition: 0.5s ease;
 }
 & .quantum-card:hover {
@@ -356,8 +391,8 @@
     color: #3F4B66;
 }
 & .quantum-card > span{
-    font-size: 10px;
-    padding: 7px;
+    font-size: clamp(6px, 2vw, 10px);
+    padding: clamp(3px, 0vw, 7px);
     border-radius: 20px;
     position: absolute;
     color: #9966FF;
@@ -375,20 +410,21 @@
     font-size: 18px;
 }
 & button {
-    margin: 20px 0;
+    margin: clamp(5px, 1vw, 20px) 0;
     font-family: inter;
     font-weight: 400;
     background: #9966FF;
     border: none;
     color: white;
-    padding: 10px 30px;
+    font-size: 10px;
+    padding: clamp(3px, 1vw, 10px) clamp(10px, 1vw, 30px);
     border-radius: 4px;
 }
 & .quantum-card ul {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(5px, 2vw, 20px);
     list-style: none;font-family: inter;
     font-weight: 400;
     font-size: 8px;
@@ -551,7 +587,8 @@
 
 .connect {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 200px;
 }
 
 .modular-solutions-wrapper > div:not(.vertical__lines-wrapper){
@@ -769,26 +806,71 @@
       }
     }
   }
+  .issuing .cards-wrapper::before, .issuing .cards-wrapper::after{
+    display: none;
+}
 
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 1024px){
     .modular-solutions-wrapper{
     }
     .content-holder, .payments, .billing, .connect, .issuing {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
+        gap: 0;
+        & > div:nth-child(2){
+            align-self: center;
+            margin-top:20px ;
+        }
         /* margin-left: 500px; */
     }
-
-    .content-holder > .text_holder, .payments > .text_holder, .billing > .text_holder, .connect > .text_holder, .issuing > .text_holder{
-        /* width: 100%; */
+    .connect-card-wrapper{
+        margin-top: 20px;
+        right: 0;
     }
-    .cards-wrapper, .payment-media-holder, .quantum-card-wrapper, .connect-card-wrapper {
-        /* display: flex; */
-
+    .payment-media-holder {
+        top: 40px;
+        right: 0;
     }
-    
+
     .issuing{
         margin-bottom: 300px;
     }
+    .text_holder, .connect .text_holder, .billing .text_holder{
+        margin-top: 0;
+        width: 100%;
+    }
+    .content-holder .text-holder {
+        width: 100%;
+        height: auto;
+    }
+
+    .issuing .cards-wrapper, .cards-wrapper{
+        top: 50px;
+        left: 0;
+    }
+    .cards-animation1 {
+        display: block;
+        margin-bottom: 80px;
+    }
+    .content-holder .cards-holder {
+        display: none;
+    }
+    .quantum-wrapper {
+        /* margin-top: 100px; */
+    }
   }
+
+  @media only screen and (max-width: 768px) {
+    .cards-animation1, .content-holder .cards-holder {
+        display: none;
+    }
+    .cards-animation2 {
+        display: block;
+        margin-bottom: 80px;
+        /* border: 1px solid red; */
+    }
+    .billing .text_holder, .connect .text_holder, .issuing .text_holder, .payments .text_holder {
+        margin-bottom: 80px;
+    }
+}
