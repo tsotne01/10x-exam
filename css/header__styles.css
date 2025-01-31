@@ -137,7 +137,7 @@
   
   .first__section-txt-content {
     width: 50%;
-    margin-left: 2vw;
+    
     & h1 {
       color: var(--h1-txt-clr);
       font-size: var(--h1-fs);
@@ -304,6 +304,9 @@
     }
     .header{
       width: 95%;
+    }
+    .first__section-txt-content{
+      margin-left: 2vw;
     }
     .logos_wrapper{
       width: 95%;
