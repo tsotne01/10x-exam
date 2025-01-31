@@ -63,6 +63,11 @@
 
 .enterprise__reinvention-customers{
     display: flex;
+    gap: 48px;
+}
+
+.enterprise__text-wrapper{
+    display: flex;
     flex-direction: column;
     gap: 48px;
 }
@@ -114,4 +119,40 @@
     content: url(../media/connect--icon.svg);
     vertical-align: middle;
     margin-right: 14px;
+}
+
+.customers__image-content{
+    position: relative;
+    /* background-image: url(../media/amazon_delivery.jpeg); */
+    /* max-width: 50vw; */
+    max-height: 500px;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-radius: 20px;
+    /* mask-image: linear-gradient(#00000091,#00000077,rgb(255, 255, 255),#0000006e,#00000081); */
+    margin-bottom: 20px;
+}
+
+.customers__image-content img{
+    max-width: 810px;
+    max-height: 500px;
+    border-radius: 20px;
+}
+
+
+.customers__image-content-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 810px;
+    height: 100%;
+    border-radius: inherit;
+    background-image: linear-gradient(to top,#e5a22ed2 10%,#e5a22e7e,#e5a22e7a ,#e5a22e7e,#e5a22ed2 90%);
+    z-index: 2;
+}
+
+.customers__list{
+    display: flex;
+    margin: 100px 0;
 }
