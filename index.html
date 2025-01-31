@@ -26,9 +26,11 @@
             </nav>
           </div>
           <div class="header__buttons">
-            <button>Contact sales </button>
-            <button>Sign in </button>
+            <button class="button_contact-sales arrow-white">Contact sales </button>
+            <button class="button_sign-in arrow-orange">Sign in </button>
           </div>
+          <button class="header__burger">
+          </button>
         </header>
         <section class="first__section">
             <div class="first__section-txt-content">
@@ -39,8 +41,8 @@
                 ultimately grow revenue.
               </p>
               <div class="first__section-buttons">
-                <button>Start now </button>
-                <button>Contact sales </button>
+                <button class="button_start-now arrow-white">Start now </button>
+                <button class="button_contact-sales arrow-blue">Contact sales </button>
               </div>
             </div>
             <div class="first__section-img-content">
@@ -132,7 +134,6 @@
           <img src="./media/marriot_logo.svg" alt="amazon" />
         </div>
     
-        <!-- Main section for "modular solutions" -->
         
         
     <section class="modular-solutions-wrapper">
@@ -144,11 +145,9 @@
             <div class="vl"></div>
         </div>
         
-        <!-- Wrapper for the main content section (set width to 1080px) -->
         <div class="modular-solutions">
             
             
-            <!-- Container for text content (headings, paragraphs) -->
             <div class="content-holder">
                 <div class="text-holder">
                     <span>Modular solutions</span>
@@ -156,9 +155,8 @@
                     <p>Reduce costs, grow revenue, and run your business more efficiently on a fully integrated platform. Use Stripe to handle all of your payments-related needs, manage revenue operations, and launch (or invent) new business models.</p>
                 </div>
 
-                <!-- Wrapper for the  card media (card images) -->
                 <div class="cards-wrapper">
-                    <img src="./media/cards-animation.png" alt="" class="cards-animation1">
+                  <img src="./media/cards-animation.png" alt="" class="cards-animation1">
                     <img src="./media/cards-animation(small).png" alt="" class="cards-animation2">
                     <div class="cards-holder">
                         <div class="black-card">
@@ -174,12 +172,10 @@
                     </div>
                      
                     <!-- Box-shadow applied here for card effect -->
-
                 </div>
             </div>
         </div>
 
-        <!-- Section for "Payments" -->
         <div class="payments">
             <div class="text_holder">
                 <span>Payments</span>
@@ -194,7 +190,6 @@
                 </div>
             </div>
             
-            <!-- Placeholder for media content related to payments -->
             <div class="payment-media-holder">
                 <div class="form_container">
                     <img src="./media/form-chair-image.jpg" alt="" />
@@ -228,7 +223,6 @@
             </div>
         </div>
 
-        <!-- Section for "Billing" -->
         <div class="billing">
             <div class="text_holder">
                 <span>Billing</span>
@@ -243,9 +237,7 @@
                 </div>
             </div>
 
-            <!-- Container for displaying "Quantum" media content -->
             <div class="quantum-wrapper">
-                <!-- Header for the "Quantum" section -->
                 <div class="quantum-header">
                     <span>Quantum</span>
                     <div class="quantum-nav">
@@ -257,7 +249,6 @@
                     </div>
                 </div>
 
-                <!-- Horizontal separator line -->
                 <hr>
 
                 <!-- Individual subscription options for "Quantum" -->
@@ -303,13 +294,13 @@
                                 <li>&nbsp;&nbsp;Priority support</li>
                             </ul>
                         </div>
+
                     </div>
                  </div>
                 
             </div>
         </div>
 
-        <!-- Section for "Connect" -->
         <div class="connect">
             <div class="text_holder">
                 <span>Connect</span>
@@ -323,7 +314,6 @@
                     <p><a href="" target="_blank">Payment Elements</a> for customizable UIs</p>
                 </div>
             </div>
-
             <!-- Placeholder for "Connect" media card content -->
             <div class="connect-card-holder">
                 <div class="connect-card-wrapper" >
@@ -345,7 +335,6 @@
                         <p id="platform">Platform</p>
                         <img src="./media/Gradient-triangle-bottom.png" alt="">
                         <p id="providers">Sellers or service providers</p>
-
                         <span id="price1">$4.50</span>
                         <span id="price2">$145.50</span>
                     </div>   
@@ -354,7 +343,6 @@
             </div>
         </div>
 
-        <!-- Section for Issuing -->
         <div class="issuing">
             <div class="text_holder">
                 <span>Issuing</span>
@@ -369,7 +357,6 @@
                 </div>
             </div>
 
-            <!-- Placeholder for "Issuing" media cards (with box-shadow effect) -->
             <div class="cards-wrapper">
                 <div class="cards-holder">
                     <div class="black-card">
@@ -411,24 +398,28 @@
                 <button class="agility-button">Contact sales </button>
             </div>
             <div class="enterprise__reinvention-customers">
-                <div class="customers__text-content">
-                    <span class="customers__working-years">5+</span>
-                    <p class="customers-text">Amazon businesses on
-                        Stripe including Prime,
-                        Audible, and Amazon Pay.</p>
-                </div>
-                <div class="customers__text-content">
-                    <span class="customers__working-years">30+</span>
-                    <p class="customers-text">Payment methods available
-                        on Stripe.</p>
-                </div>
-                <div class="customers__text-content">
-                    <span class="customers__products">Products used</span>
-                    <span class="product__1">Payments</span>
-                    <span class="product__2">Connect</span>
+                <div class="enterprise__text-wrapper">
+                    <div class="customers__text-content">
+                        <span class="customers__working-years">5+</span>
+                        <p class="customers-text">Amazon businesses on
+                            Stripe including Prime,
+                            Audible, and Amazon Pay.</p>
+                    </div>
+                    <div class="customers__text-content">
+                        <span class="customers__working-years">30+</span>
+                        <p class="customers-text">Payment methods available
+                            on Stripe.</p>
+                    </div>
+                    <div class="customers__text-content">
+                        <span class="customers__products">Products used</span>
+                        <span class="product__1">Payments</span>
+                        <span class="product__2">Connect</span>
+                    </div>
                 </div>
                 
                 <div class="customers__image-content">
+                    <div class="customers__image-content-text"></div>
+                    <img src="./media/amazon_delivery.jpeg" alt="amazon delivery">
                 </div>
             </div>
             <div class="customers__list">

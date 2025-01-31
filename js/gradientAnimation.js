@@ -15,11 +15,11 @@ class GradientAnimation{
 
         window.onresize = () => {
             this.setCanvasSize();
-            // this.createCircle();
+            this.createCircle();
         }
     }
     setCanvasSize() {
-        this.w = this.cnv.width = innerWidth;
+        this.w = this.cnv.width = window.innerWidth;
         this.h = this.cnv.height = 400;
     }
     createCircle() {

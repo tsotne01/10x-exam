@@ -14,7 +14,7 @@
 
 
 :root{
-    --ms-width:1080px;
+    --ms-width:min(1080px,100vw);
     --ms-h2: 51px;
     --ms-p: 17.5px;
     --ms-h2-lh:68px;
