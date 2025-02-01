@@ -122,7 +122,55 @@
     background-color: #0C2E4E;
     width: 540px;
     height: 249px;
-    padding: 16px 17px;
     overflow: hidden;
     border-radius: 8px 8px 0 0;
+}   
+
+code{
+    overflow-x: hidden !important;
+    max-width: 540px !important;
+}
+
+pre{
+    margin: 0;
+    /* padding: 0 !important; */
+    max-width: 540px;
+}
+
+.terminal-text{
+    border-radius: 0 0 8px 8px;
+}
+
+.terminal__block > code.terminal-text,
+.terminal__block > code.animation-target {
+    padding: 0px 17px;
+}
+
+.terminal__block{
+    padding: 0;
+}
+
+
+
+.terminal_tab span:first-child{
+    color: #06182C;
+    background-color: #8095FF;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.terminal_tab span:first-child::after{
+    content: "";
+}
+
+.terminal_tab span:nth-child(2){
+    color: #8095FF;
+    
+}
+
+.terminal_tab span{
+    font-size: 14px;
+    line-height: 24px;
 }
