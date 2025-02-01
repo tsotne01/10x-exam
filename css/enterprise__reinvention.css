@@ -123,9 +123,13 @@
 
 .customers__image-content{
     position: relative;
+    display: flex;
+    justify-content: center;
     /* background-image: url(../media/amazon_delivery.jpeg); */
     /* max-width: 50vw; */
-    max-height: 500px;
+    /* max-height: 500px; */
+    max-height: 740px;
+    /* width: 95vw; */
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -134,9 +138,9 @@
     margin-bottom: 20px;
 }
 
-.customers__image-content img{
+.customers__image-content > img{
     max-width: 810px;
-    max-height: 500px;
+    /* max-height: 500px; */
     border-radius: 20px;
 }
 
@@ -144,15 +148,104 @@
 .customers__image-content-text{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 810px;
     height: 100%;
     border-radius: inherit;
     background-image: linear-gradient(to top,#e5a22ed2 10%,#e5a22e7e,#e5a22e7a ,#e5a22e7e,#e5a22ed2 90%);
     z-index: 2;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.3);
 }
 
 .customers__list{
     display: flex;
-    margin: 100px 0;
+    margin: 40px 0 128px  0;
+}
+
+.image__content-text-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.customers__image-content-text{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    & > *{
+        margin: 24px;
+
+    }
+}
+
+.customers__image-text{
+    color: white;
+    font-size: 25px;
+    max-width: 420px;
+    line-height: 36px;
+    font-family: "Inter", serif;
+    font-weight: normal;
+}
+.small__list{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.small__list span{
+    width: 28px;
+    height: 4px;
+    background-color: rgba(1, 1, 1, 0.3);
+    border-radius: 1px;
+}
+
+/* for testing enterprise reinvention section on responsivity */
+
+/* .modular-solutions-wrapper div > div:nth-child(2){
+    display: none;
+}
+.text_holder{
+    max-width: 100%;
+} */
+
+/* end of resp testing code */
+
+
+@media (width < 1024px) {
+    .enterprise__reinvention-customers{
+        flex-direction: column;
+    }
+    .customers__text-content:not(:first-child){
+        display: none;
+    }
+    .agility-text{
+        max-width: 100%;
+    }
+    .customers__list{
+        margin-top: 0;
+        margin-bottom: 20px;
+        & img{
+            display: none;
+        }
+        & div{
+            display: flex;
+            width: 100%;
+        }
+    }
+    .customers__image-content{
+        max-width: 95vw;
+        & > div{
+            max-width: 95vw;
+            height: 410px;
+        }
+        & > img{
+            width: 95vw;
+            height: 410px;
+        }
+    }
 }
