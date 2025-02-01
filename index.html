@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Project</title>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css"/></head>
     <link rel="stylesheet" href="./css/styles.css">
-</head>
+    
 <body>
     <main>
     <div class="header__background-img">
@@ -458,23 +461,14 @@
                 <button class="designed_for_developers-button">Read the docs </button>
             </div>
             <div class="designed_for_developers-animation-block">
-                <pre class="code__block">
-                    <code >
-1 const stripe = require('stripe')('sk_test_BQokikJOvBi2Hl4olfQ2'
-2 await stripe.paymentIntents.create({
-3       amount: 2000,
-4       currency: 'usd'
-5 });
-6
-                    </code>
-                </pre>
+                <pre class="code__block"><code class="language-javascript animation-target"></code></pre>
                 <div class="designed_for_developers-terminal-block">
                     <div class="terminal_tab">
                         <span>Normal</span>
                         <span>server.js</span>
                     </div>
-                    <pre>
-                        <code>
+                    <pre class="terminal__block">
+                        <code class="language-javascript highlightText terminal-text">
 $ node server.js && stripe listen
 > Ready! Waiting for requests...
 2024-05-02 19:08:17[200] payment_intent.created
@@ -523,9 +517,10 @@ $ node server.js && stripe listen
     </main>
     <footer></footer>
 
-
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
     <script src="./js/chartjs.js"></script>
     <script src="./js/gradientAnimation.js"></script>
-</body>
+    <script type="module" src="./js/highlightCode.js"></script>
+    <script type="module" src="./js/TextReveal.js"></script>
 </html>
