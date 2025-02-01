@@ -444,46 +444,79 @@
         </div>
     </section>
     <section class="designed_for_developers">
-        <div class="designed_for_developers-text-content">
-            <span class="designed_for_developers-subtitle"></span>
-            <h2 class="designed_for_developers-title"></h2>
-            <p class="designed_for_developers-text"></p>
-            <button class="designed_for_developers-button"></button>
-        </div>
-        <div class="designed_for_developers-animation-block">
-            <pre>
-                <code>
-
-                </code>
-            </pre>
-            <div class="designed_for_developers-terminal-block">
-
+        <div class="designed_for_developers-wrapper">
+            <div class="designed_for_developers-text-content">
+                <span class="designed_for_developers-subtitle">Designed for developers</span>
+                <h2 class="designed_for_developers-title">Ship more quickly with
+                    powerful and easy-to-use
+                    APIs</h2>
+                <p class="designed_for_developers-text">Save engineering time with unified payments
+                    functionality. We obsess over the maze of gateways,
+                    payments rails, and financial institutions that make up
+                    the global economic landscape so that your teams can
+                    build what you need on one platform.</p>
+                <button class="designed_for_developers-button">Read the docs </button>
             </div>
-        </div>
-        <div class="designed_for_developers-useCases-block">
-            <div class="useCase_1">
-                <img src="" alt="">
-                <span></span>
-                <p></p>
-                <a href=""></a>
+            <div class="designed_for_developers-animation-block">
+                <pre class="code__block">
+                    <code >
+1 const stripe = require('stripe')('sk_test_BQokikJOvBi2Hl4olfQ2'
+2 await stripe.paymentIntents.create({
+3       amount: 2000,
+4       currency: 'usd'
+5 });
+6
+                    </code>
+                </pre>
+                <div class="designed_for_developers-terminal-block">
+                    <div class="terminal_tab">
+                        <span>Normal</span>
+                        <span>server.js</span>
+                    </div>
+                    <pre>
+                        <code>
+$ node server.js && stripe listen
+> Ready! Waiting for requests...
+2024-05-02 19:08:17[200] payment_intent.created
+2024-05-02 19:08:17[200] charge.succeeded 
+2024-05-02 19:08:17 [200] payment_intent.succeeded
+                        </code>
+                    </pre>
+                </div>
             </div>
-            <div class="useCase_2">
-                <img src="" alt="">
-                <span></span>
-                <p></p>
-                <a href=""></a>
-            </div>
-            <div class="useCase_3">
-                <img src="" alt="">
-                <span></span>
-                <p></p>
-                <a href=""></a>
-            </div>
-            <div class="useCase_4">
-                <img src="" alt="">
-                <span></span>
-                <p></p>
-                <a href=""></a>
+            <div class="designed_for_developers-useCases-block">
+                <div class="useCase_1">
+                    <img src="./media/designedForDevelopers/useCases_1-icon.svg" alt="">
+                    <span class="useCase-subtitle">Use Stripe with your stack</span>
+                    <p class="useCase-text">We offer client and server
+                        libraries in everything from
+                        React and PHP to .NET and iOS.</p>
+                    <a href="#" class="useCase-link">See libraries </a>
+                </div>
+                <div class="useCase_2">
+                    <img src="./media/designedForDevelopers/useCases_2-icon.svg" alt="">
+                    <span class="useCase-subtitle">Try no-code options</span>
+                    <p class="useCase-text">Customize and deploy
+                        payments interfaces directly
+                        from the Stripe Dashboard.</p>
+                    <a href="#" class="useCase-link">Explore no-code </a>
+                </div>
+                <div class="useCase_3">
+                    <img src="./media/designedForDevelopers/useCases_3-icon.svg" alt="">
+                    <span class="useCase-subtitle">Explore prebuilt integrations</span>
+                    <p class="useCase-text">Connect Stripe to over a
+                        hundred tools including Adobe,
+                        Salesforce, and Xero.</p>
+                    <a href="#" class="useCase-link">Browse App Marketplace </a>
+                </div>
+                <div class="useCase_4">
+                    <img src="./media/designedForDevelopers/useCases_4-icon.svg" alt="">
+                    <span class="useCase-subtitle">Build on Stripe Apps</span>
+                    <p class="useCase-text">Create an app just for your team
+                        or for the millions of businesses
+                        on Stripe.</p>
+                    <a href="#" class="useCase-link">Learn about Apps </a>
+                </div>
             </div>
         </div>
     </section>
