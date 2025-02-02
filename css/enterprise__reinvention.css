@@ -109,14 +109,14 @@
 }
 
 .product__1::before{
-    content: url(../media/payments--icon.svg);
+    content: url(../media/enterpriseReinvention/payments--icon.svg);
     vertical-align: middle;
     margin-right: 14px;
 }
 
 
 .product__2::before{
-    content: url(../media/connect--icon.svg);
+    content: url(../media/enterpriseReinvention/connect--icon.svg);
     vertical-align: middle;
     margin-right: 14px;
 }
