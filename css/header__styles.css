@@ -1,18 +1,5 @@
 
-:root {
-    --ms-width: 1080px;
-    --ms-h2: 51px;
-    --ms-p: 17.5px;
-    --ms-h2-lh: 68px;
-    --ms-p-lh: 28px;
-    --nav-txt-clr: rgba(255, 255, 255, 1);
-    --header-width: 1080px;
-    --h1-txt-clr: #3a3a3a;
-    --h1-fs: 83.35px;
-    --paragraph-clr: #425466;
-    --fs-btn-clr: #0a2540;
-    --paragraph-fs: 16.45px;
-  }
+
   
   body {
     /* height: 100vh; */
@@ -160,9 +147,9 @@
     }
     & p {
       font-family: "Inter", serif;
-      font-size: var(--paragraph-fs);
-      line-height: 28px;
-      color: var(--paragraph-clr);
+      font-size: var(--parag-fs-primary);
+      line-height: var(--parag-ln-hght-primary);
+      color: var(--parag-clr-primary);
       font-weight: bold;
     }
   }
@@ -176,7 +163,7 @@
     }
     & button:first-child {
       color: var(--nav-txt-clr);
-      background-color: var(--fs-btn-clr);
+      background-color: var(--hero-btn-clr);
     }
     & button:nth-child(2) {
       background-color: transparent;
@@ -268,9 +255,6 @@
   }
   
   @media (width < 600px) {
-    
-
-    
     .first__section-txt-content h1{
       --h1-fs: 60px;
       font-size: var(--h1-fs);

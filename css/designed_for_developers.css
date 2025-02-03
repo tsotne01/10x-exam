@@ -1,7 +1,7 @@
 
 
 .designed_for_developers{
-    background-color: #0A2540;
+    background-color: var(--bg-clr-secondary);
     min-height: 1200px;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@
 }
 
 .designed_for_developers-subtitle{
-    color: #00D4FF;
+    color: var(--dfd-btn-clr);
     font-size: 17px;
     line-height: 28px;
     letter-spacing: 0.2px;
@@ -31,7 +31,7 @@
     letter-spacing: -0.2px;
 }
 .designed_for_developers-text{
-    color: #ADBDCC;
+    color: var(--parag-clr-secondary);
     font-size: 16.5px;
     line-height: 24px;
     letter-spacing: 0.2px;
@@ -79,10 +79,10 @@
     display: block;
     color: #FFFFFF;
     font-size: 13.7px;
-    border-left: 1px solid #00D4FF;
+    border-left: 1px solid var(--dfd-btn-clr);
 }
 .useCase-text{
-    color: #ADBDCC;
+    color: var(--parag-clr-secondary);
     font-size: 13.5px;
     line-height: 24px;
     letter-spacing: 0.2px;
@@ -90,7 +90,7 @@
 
 .useCase-link{
     text-decoration: none;
-    color: #00D4FF;
+    color: var(--dfd-btn-clr);
     font-size: 13.7px;
 }
 .useCase-link::after{
@@ -109,8 +109,8 @@
     width: 144px;
     max-width: 160px;
     border-radius: 16.5px;
-    background-color: #00D4FF;
-    color: #0A2540;
+    background-color: var(--dfd-btn-clr);
+    color: var(--h2-clr-primary);
     font-size: 14px;
     padding: 8.5px 0;
     font-family: "Inter", serif;
