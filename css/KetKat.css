@@ -112,12 +112,12 @@ main{
     top: 91px;
     left:-89px;
 }
-/* .cards-wrapper::after{
+.cards-wrapper::after{
     content: url(../media/card-bckg-right.svg);
     position: absolute;
     top: 75px;
-    right:-88px;
-} */
+    right:-68px;
+}
 .cards_backgr-image{
     position: absolute;
     top: 0;
@@ -139,13 +139,6 @@ main{
     z-index: 1;
     transition: 0.2s ease-in-out;
     
-}
-.content-holder  .black-card::after{
-    content: url(../media/card-bckg-right.svg);
-    position: absolute;
-    top: 75px;
-    right:-68px;
-    z-index: -1;
 }
 .green-card {
     position: absolute;
