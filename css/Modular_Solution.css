@@ -288,7 +288,7 @@ main{
 
 .issuing{
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     gap: 160px;
 &.text_holder{
     width: 540px;
