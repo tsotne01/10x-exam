@@ -140,13 +140,7 @@ main{
     transition: 0.2s ease-in-out;
     
 }
-/* .content-holder  .black-card::after{
-    content: url(../media/card-bckg-right.svg);
-    position: absolute;
-    top: 75px;
-    right:-68px;
-    z-index: -1;
-} */
+
 .green-card {
     position: absolute;
     top: 100px;
