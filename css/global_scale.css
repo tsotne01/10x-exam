@@ -22,6 +22,8 @@
     position: absolute;
     width: 100vw;
     height: 100vh;
+    top: 20%;
+    right:-25%;
     /* right: -400px; */
     /* z-index: 999; */
 }
