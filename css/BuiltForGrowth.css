@@ -116,7 +116,7 @@ section.built-for-growth {
         font-family: inter;
         font-weight: bold; 
         margin: 0;
-        max-width: 300px;
+        /* max-width: 300px; */
     }
 
     & .card-content_holder > p {
