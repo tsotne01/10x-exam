@@ -1,4 +1,6 @@
 
+
+console.log(new Chart());
 let firstChart = new Chart(document.getElementById("first__chart-canvas").getContext("2d"), {
     type: 'line',
     data: {
