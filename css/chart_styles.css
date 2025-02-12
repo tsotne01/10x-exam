@@ -23,14 +23,14 @@
         margin-right: 20px;
     }
     & .chart__menu::before{
-        content: url(../media/rocket_rides-logo.svg);
+        content: url("../media/Modular\ Solution/rocket_rides-logo.svg");
         display: inline-block;
         width: 20px;
         height: 20px;
         margin-right: 8px;
     }
     & .chart__menu::after{
-        content: url(../media/arrow_down-white.svg);
+        content: url("../media/Modular\ Solution/arrow_down-white.svg");
         width: 10px;
         height: auto;
         display: inline-block;
@@ -59,10 +59,11 @@
         /* padding-left: 20px; */
     }
     & .chart__search::before{
-        content: url(../media/search__icon.svg);
+        content: url("../media/Modular\ Solution/search__icon.svg");
         display: inline-block;
         width: 21px;
         height: 11px;
+        text-align: center;
     }
    
 
@@ -160,7 +161,7 @@
 }
 
 .net__volume-title::after{
-    content: url(../media/arrow__down.svg);
+    content: url("../media/Modular\ Solution/arrow__down.svg");
     display: inline-block;
     margin-left: 6px;
 }
