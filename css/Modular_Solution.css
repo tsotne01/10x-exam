@@ -128,7 +128,7 @@ main{
 .box-shadow {
     position: absolute;
     width: clamp(322px, 26vw, 350px);
-    height: clamp (390px, 26vw, 413px);
+    height: clamp(390px, 26vw, 413px);
     border-radius: 20px;
     box-shadow: 0 5px 50px 0 rgb(0 0 0 / 35%);
 }
